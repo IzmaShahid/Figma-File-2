@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #7251c0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #895def;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+header .logo span {
+    color: #ffdc5c;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .profile {
+    margin-left: 15px;
+}
+
+header .menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero .content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .buttons {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #6bc14b;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.hero .btn.secondary {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.hero .search-bar {
+    display: flex;
+}
+
+.hero .search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.hero .search-bar button {
+    padding: 10px;
+    border: none;
+    background-color: #ff5e57;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+}
+
+.character img {
+    max-width: 400px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #7251c0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero .character img {
+        margin-top: 30px;
+    }
+
+    header .menu-toggle {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header .menu-toggle.active + nav ul {
+        display: block;
+    }
+}
